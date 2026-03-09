@@ -55,6 +55,9 @@ streamlit run app.py
 ```
 ![Project Screenshot](project_output.png)
 
+## Live Demo
+[https://fab-energy-consumption.streamlit.app](https://fab-energy-consumption-prediction-ml-modelbranchmainmainfileap.streamlit.app/)
+
 ## 📊 Dataset
 
 The dataset contains manufacturing parameters such as:
