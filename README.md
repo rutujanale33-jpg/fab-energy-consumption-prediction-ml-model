@@ -51,9 +51,9 @@ pip install -r requirements.txt
 ### 2️⃣ Run the application
 
 ```
-python app.py
+streamlit run app.py
 ```
-
+![Project Screenshot](project_output.png)
 
 ## 📊 Dataset
 
