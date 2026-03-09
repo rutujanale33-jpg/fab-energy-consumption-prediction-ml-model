@@ -1,103 +1,80 @@
-# ⚡ Fab Energy Consumption Prediction System
+# FAB Energy Consumption Prediction using Machine Learning
 
 ## 📌 Project Overview
-Fab Energy Consumption Prediction System is a Machine Learning based web application that predicts energy consumption in a fabrication unit based on various operational parameters.
 
-This system helps industries:
-- Reduce energy waste
-- Improve sustainability
-- Optimize operational efficiency
-- Lower carbon footprint
+This project predicts **energy consumption in a semiconductor fabrication (FAB) environment** using Machine Learning.
+The goal is to analyze production parameters and estimate energy usage to improve efficiency and reduce operational costs.
 
----
+## 🧠 Machine Learning Model
 
-## 🚀 Features
-- Machine Learning model for energy prediction
-- Interactive web application using Streamlit
-- Real-time user input
-- Instant prediction results
-- Sustainability-focused solution
+The project uses a **trained regression model** to predict energy consumption based on manufacturing process data.
 
----
+Algorithms used:
 
-## 🛠️ Tech Stack
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Streamlit
-- Git & GitHub
-
----
+* Scikit-learn Regression Model
+* Data preprocessing with **StandardScaler**
+* Label encoding for categorical variables
 
 ## 📂 Project Structure
 
-fab-energy-ml-project/
+```
+fab-energy-consumption-prediction-ml-model
 │
-├── app.py
-├── energy_model.pkl
-├── scaler.pkl
-├── model_columns.pkl
-├── requirements.txt
+├── app.py                         # Application for prediction
+├── FAB_Energy.ipynb               # Jupyter notebook with training code
+├── fab_energy_dataset_500-2.csv   # Dataset used for training
+├── energy_model.pkl               # Trained ML model
+├── scaler.pkl                     # Feature scaling model
+├── le_process.pkl                 # Label encoder
+├── le_shift.pkl
+├── le_tool.pkl
+├── requirements.txt               # Python dependencies
 └── README.md
+```
 
----
+## ⚙️ Technologies Used
 
-## ▶️ How to Run Locally
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Jupyter Notebook
 
-1. Clone the repository
+## 🚀 How to Run the Project
 
-git clone https://github.com/suhanishinde551/ML-Project/.git
+### 1️⃣ Install dependencies
 
-2. Go inside the project folder
-
-cd ML-Project
-
-3. Install required libraries
-
+```
 pip install -r requirements.txt
+```
 
-4. Run the application
+### 2️⃣ Run the application
 
-python -m streamlit run app.py
+```
+python app.py
+```
 
----
 
-## 🌍 Live Deployment
+## 📊 Dataset
 
-After deployment, your app will be available at:
+The dataset contains manufacturing parameters such as:
 
-https://your-app-name.streamlit.app
+* Process Type
+* Tool Used
+* Shift
+* Production parameters
+* Energy consumption values
 
-(Paste your real Streamlit link here after deployment)
-
----
-
-## 👥 Team Members
-- Suhani
-- Rutuja
-- Smita
-- Kalyani
-- Sneha
-
----
+These features are used to train the ML model.
 
 ## 🎯 Future Improvements
-- Add real-time dashboard
-- Improve model accuracy
-- Add database integration
-- Connect with IoT devices
-- Add user authentication
 
----
+* Deploy the model using **Streamlit**
+* Add real-time energy prediction dashboard
+* Improve prediction accuracy using advanced models
 
-## 🌱 Impact
-This project promotes:
-- Sustainable manufacturing
-- Energy efficiency
-- Data-driven industrial optimization
-- Reduced environmental impact
+## 👩‍💻 Author
 
----
+**Rutuja Nale**
 
-⭐ If you like this project, please give it a star!
+Machine Learning Project – FAB Energy Consumption Prediction
